@@ -1,0 +1,11 @@
+{% extends 'encyclopedia/layout.html' %}
+{% load static %}
+{% block title %}
+    Error: {{title}}
+{% endblock %}
+{% block body %}
+    <center>
+        <img alt="WikiLogo.png" src="{% static 'encyclopedia/WikiLogo.png' %}" style="padding:1cm; margin:1cm; width:40%; height:auto">
+        <p>{{message}}</p>
+    </center>
+{% endblock %}
